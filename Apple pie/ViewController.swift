@@ -9,11 +9,74 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    
+    //MARK: IB - Outlets:
+    
+    @IBOutlet weak var palmImageView: UIImageView!
+    @IBOutlet var letterButton: [UIButton]!
+    @IBOutlet weak var correctWordLabel: UILabel!
+    @IBOutlet weak var scoreLabel: UILabel!
+    
+    //MARK: Properties:
+    
+    var currentGame: GameApplePie!
+    let incorrectMovesAllwed = 7
+    var listOfWords = [
+        "Байкал",
+        "Танганьика",
+        "Восток",
+        "Каспийское",
+        "Сан-Мартин",
+        "Ньяса",
+        "Иссык-Куль",
+        "Невольничье",
+        "Крейтер",
+        "Буэнос-Айрес",
+            "Матана",
+        "Хорниндалсватнет",
+        "Cалезское",
+            "Тоба",
+        "Тахо",
+        "Лаго-Архентино",
+        "Шелан",
+        "Салсваннет",
+        "Киву",
+        "Квеснел",
+        "Мьёса",
+        "Хауроко",
+        "Тиншё",
+        "Адамс-Лейк",
+        "Ван",
+        "Посо"]
+    
+    var totalWins = 0
+    var totalLosses = 0
+    
+    //MARK: Methods
+    
+    func newRound() {
+        let newWord = listOfWords.removeFirst()
+    currentGame = GameApplePie(word: newWord, incorrectMovesRemaining: incorrectMovesAllwed)
+        updateUI()
+    }
+    
+    func updateUI() {
+        let movesRemaining = currentGame.incorrectMovesRemaining
+        let image = "Palm \(movesRemaining < 8 ? movesRemaining : 7)"
+        palmImageView.image = UIImage(named: image)
+        scoreLabel.text = "Выигрыши: \(totalWins), проигрыши: \(totalLosses)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        newRound()
     }
 
-
+    
+    
+//MARK: IB - Action:
+    
+    @IBAction func letterButtonPressed(_ sender: UIButton) {
+        sender.isEnabled = false
+    }
 }
 

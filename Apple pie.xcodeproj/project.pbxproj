@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B6DFFD426B3124100139AAD /* GameApplePie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DFFD326B3124100139AAD /* GameApplePie.swift */; };
 		9B85BF5126B2A5520064129A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5026B2A5520064129A /* AppDelegate.swift */; };
 		9B85BF5326B2A5520064129A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5226B2A5520064129A /* SceneDelegate.swift */; };
 		9B85BF5526B2A5520064129A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5426B2A5520064129A /* ViewController.swift */; };
@@ -16,6 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B6DFFD326B3124100139AAD /* GameApplePie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApplePie.swift; sourceTree = "<group>"; };
 		9B85BF4D26B2A5520064129A /* Apple pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B85BF5026B2A5520064129A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B85BF5226B2A5520064129A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,12 +59,13 @@
 			isa = PBXGroup;
 			children = (
 				9B85BF5026B2A5520064129A /* AppDelegate.swift */,
+				9B85BF5926B2A5530064129A /* Assets.xcassets */,
+				9B6DFFD326B3124100139AAD /* GameApplePie.swift */,
+				9B85BF5E26B2A5530064129A /* Info.plist */,
+				9B85BF5B26B2A5530064129A /* LaunchScreen.storyboard */,
+				9B85BF5626B2A5520064129A /* Main.storyboard */,
 				9B85BF5226B2A5520064129A /* SceneDelegate.swift */,
 				9B85BF5426B2A5520064129A /* ViewController.swift */,
-				9B85BF5626B2A5520064129A /* Main.storyboard */,
-				9B85BF5926B2A5530064129A /* Assets.xcassets */,
-				9B85BF5B26B2A5530064129A /* LaunchScreen.storyboard */,
-				9B85BF5E26B2A5530064129A /* Info.plist */,
 			);
 			path = "Apple pie";
 			sourceTree = "<group>";
@@ -140,6 +143,7 @@
 				9B85BF5526B2A5520064129A /* ViewController.swift in Sources */,
 				9B85BF5126B2A5520064129A /* AppDelegate.swift in Sources */,
 				9B85BF5326B2A5520064129A /* SceneDelegate.swift in Sources */,
+				9B6DFFD426B3124100139AAD /* GameApplePie.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -293,7 +297,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Apple-pie";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Sharapova-Apple-pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -312,7 +316,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Apple-pie";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.example.Sharapova-Apple-pie";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
