@@ -20,7 +20,7 @@ class ViewController: UIViewController {
     //MARK: Properties:
     
     var currentGame: GameApplePie!
-    let incorrectMovesAllwed = 7
+    let incorrectMovesAllowed = 7
     var listOfWords = [
         "Байкал",
         "Танганьика",
@@ -56,14 +56,26 @@ class ViewController: UIViewController {
     
     func newRound() {
         let newWord = listOfWords.removeFirst()
-    currentGame = GameApplePie(word: newWord, incorrectMovesRemaining: incorrectMovesAllwed)
+    currentGame = GameApplePie(word: newWord, incorrectMovesRemaining: incorrectMovesAllowed)
         updateUI()
+    }
+    
+    func updateWordLabel () {
+        var displayWord = [String]()
+        for letter in currentGame.guessedWord {
+            displayWord.append(String(letter))
+        }
+        correctWordLabel.text = displayWord.joined(separator: " ")
+        
     }
     
     func updateUI() {
         let movesRemaining = currentGame.incorrectMovesRemaining
-        let image = "Palm \(movesRemaining < 8 ? movesRemaining : 7)"
+        let imageNumber = (movesRemaining + 64) % 8
+            //movesRemaining < 0 ? 0 : movesRemaining < 8 ? movesRemaining : 7
+        let image = "Palm \(imageNumber)"
         palmImageView.image = UIImage(named: image)
+        updateWordLabel()
         scoreLabel.text = "Выигрыши: \(totalWins), проигрыши: \(totalLosses)"
     }
     override func viewDidLoad() {
@@ -77,6 +89,9 @@ class ViewController: UIViewController {
     
     @IBAction func letterButtonPressed(_ sender: UIButton) {
         sender.isEnabled = false
+      let letter = sender.title(for: .normal)!
+        currentGame.playerGuessed(letter: Character(letter))
+        updateUI()
     }
 }
 
