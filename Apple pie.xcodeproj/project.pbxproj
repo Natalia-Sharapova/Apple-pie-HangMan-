@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9B6DFFD426B3124100139AAD /* GameApplePie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DFFD326B3124100139AAD /* GameApplePie.swift */; };
+		9B753CC526B6EE60004688B1 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753CC426B6EE60004688B1 /* infoViewController.swift */; };
 		9B85BF5126B2A5520064129A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5026B2A5520064129A /* AppDelegate.swift */; };
 		9B85BF5326B2A5520064129A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5226B2A5520064129A /* SceneDelegate.swift */; };
 		9B85BF5526B2A5520064129A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5426B2A5520064129A /* ViewController.swift */; };
@@ -18,6 +19,7 @@
 
 /* Begin PBXFileReference section */
 		9B6DFFD326B3124100139AAD /* GameApplePie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApplePie.swift; sourceTree = "<group>"; };
+		9B753CC426B6EE60004688B1 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		9B85BF4D26B2A5520064129A /* Apple pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9B85BF5026B2A5520064129A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9B85BF5226B2A5520064129A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -66,6 +68,7 @@
 				9B85BF5626B2A5520064129A /* Main.storyboard */,
 				9B85BF5226B2A5520064129A /* SceneDelegate.swift */,
 				9B85BF5426B2A5520064129A /* ViewController.swift */,
+				9B753CC426B6EE60004688B1 /* infoViewController.swift */,
 			);
 			path = "Apple pie";
 			sourceTree = "<group>";
@@ -142,6 +145,7 @@
 			files = (
 				9B85BF5526B2A5520064129A /* ViewController.swift in Sources */,
 				9B85BF5126B2A5520064129A /* AppDelegate.swift in Sources */,
+				9B753CC526B6EE60004688B1 /* infoViewController.swift in Sources */,
 				9B85BF5326B2A5520064129A /* SceneDelegate.swift in Sources */,
 				9B6DFFD426B3124100139AAD /* GameApplePie.swift in Sources */,
 			);

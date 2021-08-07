@@ -9,9 +9,11 @@
 
 struct GameApplePie {
     
+    
+    
     var word: String
     var incorrectMovesRemaining: Int
-    fileprivate var guessedLetters = [Character]()
+    var guessedLetters = [Character]()
     
     init(word:String, incorrectMovesRemaining: Int) {
         self.word = word
