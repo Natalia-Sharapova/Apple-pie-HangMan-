@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9B1C7F6426BEC6D800D90F83 /* ScreenShot 1.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C7F6026BEC6D800D90F83 /* ScreenShot 1.png */; };
+		9B1C7F6526BEC6D800D90F83 /* ScreenShot 4.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C7F6126BEC6D800D90F83 /* ScreenShot 4.png */; };
+		9B1C7F6626BEC6D800D90F83 /* ScreenShot 2.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C7F6226BEC6D800D90F83 /* ScreenShot 2.png */; };
+		9B1C7F6726BEC6D800D90F83 /* ScreenShot 3.png in Resources */ = {isa = PBXBuildFile; fileRef = 9B1C7F6326BEC6D800D90F83 /* ScreenShot 3.png */; };
 		9B6DFFD426B3124100139AAD /* GameApplePie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B6DFFD326B3124100139AAD /* GameApplePie.swift */; };
 		9B753CC526B6EE60004688B1 /* infoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B753CC426B6EE60004688B1 /* infoViewController.swift */; };
 		9B85BF5126B2A5520064129A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B85BF5026B2A5520064129A /* AppDelegate.swift */; };
@@ -18,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9B1C7F6026BEC6D800D90F83 /* ScreenShot 1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenShot 1.png"; sourceTree = "<group>"; };
+		9B1C7F6126BEC6D800D90F83 /* ScreenShot 4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenShot 4.png"; sourceTree = "<group>"; };
+		9B1C7F6226BEC6D800D90F83 /* ScreenShot 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenShot 2.png"; sourceTree = "<group>"; };
+		9B1C7F6326BEC6D800D90F83 /* ScreenShot 3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "ScreenShot 3.png"; sourceTree = "<group>"; };
 		9B6DFFD326B3124100139AAD /* GameApplePie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameApplePie.swift; sourceTree = "<group>"; };
 		9B753CC426B6EE60004688B1 /* infoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = infoViewController.swift; sourceTree = "<group>"; };
 		9B85BF4D26B2A5520064129A /* Apple pie.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple pie.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -41,6 +49,17 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9B1C7F5F26BEC6B300D90F83 /* ScreenShots */ = {
+			isa = PBXGroup;
+			children = (
+				9B1C7F6026BEC6D800D90F83 /* ScreenShot 1.png */,
+				9B1C7F6226BEC6D800D90F83 /* ScreenShot 2.png */,
+				9B1C7F6326BEC6D800D90F83 /* ScreenShot 3.png */,
+				9B1C7F6126BEC6D800D90F83 /* ScreenShot 4.png */,
+			);
+			path = ScreenShots;
+			sourceTree = "<group>";
+		};
 		9B85BF4426B2A5520064129A = {
 			isa = PBXGroup;
 			children = (
@@ -60,6 +79,7 @@
 		9B85BF4F26B2A5520064129A /* Apple pie */ = {
 			isa = PBXGroup;
 			children = (
+				9B1C7F5F26BEC6B300D90F83 /* ScreenShots */,
 				9B85BF5026B2A5520064129A /* AppDelegate.swift */,
 				9B85BF5926B2A5530064129A /* Assets.xcassets */,
 				9B6DFFD326B3124100139AAD /* GameApplePie.swift */,
@@ -130,9 +150,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9B1C7F6526BEC6D800D90F83 /* ScreenShot 4.png in Resources */,
+				9B1C7F6726BEC6D800D90F83 /* ScreenShot 3.png in Resources */,
 				9B85BF5D26B2A5530064129A /* LaunchScreen.storyboard in Resources */,
 				9B85BF5A26B2A5530064129A /* Assets.xcassets in Resources */,
+				9B1C7F6426BEC6D800D90F83 /* ScreenShot 1.png in Resources */,
 				9B85BF5826B2A5520064129A /* Main.storyboard in Resources */,
+				9B1C7F6626BEC6D800D90F83 /* ScreenShot 2.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
